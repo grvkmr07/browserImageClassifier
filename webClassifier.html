@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Classfier</title>
+    
+<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+<script src="webcam.js"></script>
+<script src="createdataset.js"></script>
+</head>
+<body bgcolor=#c6e6c3>
+   
+
+    <center><h1>HELLO! BUILD your own CLASSIFIER and DOWNLOAD the model</h1></center>
+	<table>
+        <tr> <td rowspan="20" style="padding:30px">
+    <div>
+		<div>
+            <video autoplay playsinline muted id="wc" width="400" height="300"></video>
+		</div>
+	</div>
+            </td>
+            <td align="center">
+                Click on class buttons and CREATE your own DATASET
+            </td>
+        </tr>
+    
+
+        <tr>
+            <td align="left"><button type="button" id="0" onclick="handleButton(this)" >Class 1</button></td></tr>
+        <tr><td align = "left"><button type="button" id="1" onclick="handleButton(this)" >Class 2</button></td>
+        </tr>   
+        <tr><td>
+            <div id="class1samples">Class 1 Samples:</div>
+            <div id="class2samples">Class 2 Samples:</div></td>
+        </tr>
+    
+    
+    
+        <tr><td><button type="button" id="train" onclick="doTraining()" >Train Network</button></td></tr>
+    <tr><td align = "center">
+        <div id="justatext" align="center">Press (Ctrl+Shift+I) or Open Developer Tools to see loss,<br>Once Training is done, Press "Start Predicting" and you may download the model</div></td></tr>
+        <tr><td align = "center">
+	        <button type="button" id="startPredicting" onclick="startPredicting()" >Start Predicting</button>
+            <button type="button" id="stopPredicting" onclick="stopPredicting()" >Stop Predicting</button></td></tr>
+        <tr><td align = "center"><div id="prediction"></div><br></td></tr>
+        <tr><td align = "center"><button type="button" id="saveModel" onclick="saveModel()" >Download Model</button></td></tr>
+        </table>
+    
+</body>
+
+<script src="index.js"></script>
+</html>
