@@ -7,3 +7,5 @@ Machine Learning model developed and deployed on a web browser.
 - **Recommended Browser**: Mozilla FireFox 
 - Few lines of code modification makes can make it **Multi-Class Classifier**
 - You may download the weights learned and architecture of model trained, in the format **.bin** and **.json**
+- Naive implementation of ***Google's Teachable Machine***
+ -check at https://teachablemachine.withgoogle.com/train/image
